@@ -1,14 +1,15 @@
 <script setup></script>
 <template>
-  <div class="">
-    <p class="text-7xl font-bold text-center uppercase pt-4 pb-5 border-b border-slate-600">Work</p>
+  <div class="py-8">
+    <p class="text-7xl font-bold text-center uppercase pb-5">Work</p>
 
-    <div class="border-b border-slate-600">
+    <div class="">
       <div class="items-center flex justify-center">
-        <div class="text-center text-[20px] py-5 max-w-[500px]">
-          <div class="">
+        <div class="text-center text-[20px] pt-5 max-w-[500px]">
+          <div class="px-5">
             Эти сайты были разработаны мной исключительно для включения в портфолио и были
-            развернуты на платформе Netlify.
+            развернуты на платформе <span class="text-green-500">Netlify (Vue.js)</span> и
+            <span class="text-black bg-white px-1 rounded-lg">Vercel (Next.js)</span>.
           </div>
         </div>
       </div>

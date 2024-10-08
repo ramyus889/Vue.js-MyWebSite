@@ -1,4 +1,5 @@
 <script setup>
+import UseGridCard from './components/UseGridCard.vue';
 import UseHeader from './components/UseHeader.vue';
 import UseWork from './components/UseWork.vue';
 </script>
@@ -7,5 +8,6 @@ import UseWork from './components/UseWork.vue';
   <div class="">
     <UseHeader />
     <UseWork />
+    <UseGridCard />
   </div>
 </template>
