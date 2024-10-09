@@ -1,4 +1,12 @@
-<script setup></script>
+<script>
+export default {
+  name: 'UseWork',
+  mounted() {
+    document.title = 'Portfolio | Work';
+  }
+};
+</script>
+
 <template>
   <div class="py-8 mt-20">
     <p
