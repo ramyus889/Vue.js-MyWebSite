@@ -1,4 +1,5 @@
 <script setup>
+import UseFooter from './UseFooter.vue';
 import UseGridCard from './UseGridCard.vue';
 import UseWork from './UseWork.vue';
 </script>
@@ -7,5 +8,6 @@ import UseWork from './UseWork.vue';
   <div class="">
     <UseWork />
     <UseGridCard />
+    <UseFooter />
   </div>
 </template>
