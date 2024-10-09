@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="py-8">
+  <div class="py-8 mt-20">
     <p class="text-7xl font-bold text-center uppercase pb-5">Work</p>
 
     <div class="">

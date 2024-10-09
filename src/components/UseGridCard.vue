@@ -48,7 +48,8 @@ const items2 = [
     id: 3,
     image: '/Screenshot_8.png',
     link: 'https://next-js-pizza-sigma.vercel.app/',
-    description: 'next-js-pizza-sigma.vercel.app'
+    description: 'next-js-pizza-sigma.vercel.app',
+    hidden: 'xl:block hidden'
   },
 
   {
@@ -97,6 +98,7 @@ const items2 = [
     <div
       v-for="item in items2"
       :key="item.id"
+      :class="item.hidden"
       class="md:max-w-[630px] w-full relative border border-slate-600 p-[15px] flex flex-col gap-4 justify-center"
     >
       <div class="flex justify-center items-center">
