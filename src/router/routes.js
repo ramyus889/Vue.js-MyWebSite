@@ -1,8 +1,8 @@
-import App from '@/App.vue';
+import UseHome from '@/components/UseHome.vue';
 
 export const routes = [
   {
     path: '/',
-    component: App
+    component: UseHome
   }
 ];

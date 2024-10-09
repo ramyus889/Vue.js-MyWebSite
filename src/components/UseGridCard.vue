@@ -1,4 +1,6 @@
 <script setup>
+import UsePreview from './UsePreview.vue';
+
 const items1 = [
   {
     id: 1,
@@ -70,52 +72,23 @@ const items2 = [
   <div class="border border-slate-600 mt-2"></div>
   <div class="pt-4 pb-3 px-5 text-3xl font-bold">Vue.js (Netlify)</div>
   <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-4 mt-5">
-    <div
+    <UsePreview
       v-for="item in items1"
       :key="item.id"
-      class="md:max-w-[630px] relative w-full border border-slate-600 p-[15px] flex flex-col gap-4 justify-center"
-    >
-      <div class="flex justify-center items-center">
-        <a :href="item.link" target="_blank">
-          <img
-            :src="item.image"
-            class="hover:translate-y-[-5px] cursor-pointer rounded-xl transition-all duration-500 ease-in-out mb-12"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="absolute bottom-0 left-0 right-0">
-        <div class="flex justify-between items-center gap-10 px-3 py-6 text-[14px]">
-          <div class="text-start">{{ item.description }}</div>
-          <a href="#" class="hover:underline">Перейти →</a>
-        </div>
-      </div>
-    </div>
+      :image="item.image"
+      :link="item.link"
+      :description="item.description"
+    />
   </div>
   <div class="border border-slate-600 mt-[100px]"></div>
   <div class="pt-4 pb-3 px-5 text-3xl font-bold">Next.js (Vercel)</div>
   <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-4 mt-5">
-    <div
+    <UsePreview
       v-for="item in items2"
       :key="item.id"
-      :class="item.hidden"
-      class="md:max-w-[630px] w-full relative border border-slate-600 p-[15px] flex flex-col gap-4 justify-center"
-    >
-      <div class="flex justify-center items-center">
-        <a :href="item.link" target="_blank">
-          <img
-            :src="item.image"
-            class="hover:translate-y-[-5px] cursor-pointer rounded-xl transition-all duration-500 ease-in-out mb-12"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="absolute bottom-0 left-0 right-0">
-        <div class="flex justify-between items-center gap-10 px-3 py-6 text-[14px]">
-          <div class="text-start">{{ item.description }}</div>
-          <a href="#" class="hover:underline">Перейти →</a>
-        </div>
-      </div>
-    </div>
+      :image="item.image"
+      :link="item.link"
+      :description="item.description"
+    />
   </div>
 </template>
