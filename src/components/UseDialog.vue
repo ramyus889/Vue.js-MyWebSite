@@ -18,7 +18,7 @@
       <div class="text-[24px] font-bold text-center mt-14">Технологий</div>
       <div class="flex sm:place-content-center place-self-start mb-3">
         <div
-          class="grid min-[1760px]:grid-cols-4 xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-[2150px]:gap-20 gap-x-36 gap-y-10 mt-8 px-5"
+          class="grid min-[1760px]:grid-cols-4 xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-[2150px]:gap-20 gap-x-36 gap-y-10 mt-8 px-1"
         >
           <div class="">
             <div class="text-[18px] font-bold mb-3">JS-фреймворк</div>
