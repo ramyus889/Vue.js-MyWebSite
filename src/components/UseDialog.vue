@@ -1,6 +1,6 @@
 <template>
   <div class="card flex justify-center">
-    <Button label="Frameworks →" @click="visible = true" text />
+    <Button label="Frameworks " @click="visible = true" text />
     <Dialog
       v-model:visible="visible"
       modal

@@ -56,7 +56,9 @@ defineProps({
     </div>
     <div class="absolute bottom-0 left-0 right-0">
       <div class="flex justify-between items-center gap-10 px-3 py-6 text-[14px]">
-        <a :href="link" target="_blank" class="text-start hover:underline">{{ description }}</a>
+        <a :href="link" target="_blank" class="text-start hover:underline truncate">{{
+          description
+        }}</a>
         <UseDialog
           :link="link"
           :image="image"
