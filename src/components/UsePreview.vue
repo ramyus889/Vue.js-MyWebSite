@@ -10,15 +10,34 @@ defineProps({
   framework: String,
   linkFramework: String,
   imageFramework: String,
+  frameworkR: String,
+  linkFrameworkR: String,
+  imageFrameworkR: String,
   library: String,
   linkLibrary: String,
   imageLibrary: String,
   UIFrameworkT: String,
   linkUIFrameworkT: String,
   imageUIFrameworkT: String,
-  ServisNetlify: String,
-  linkServisNetlify: String,
-  imageServisNetlify: String
+  UIFrameworkP: String,
+  linkUIFrameworkP: String,
+  imageUIFrameworkP: String,
+  UIFrameworkS: String,
+  linkUIFrameworkS: String,
+  imageUIFrameworkS: String,
+  UIFrameworkR: String,
+  linkUIFrameworkR: String,
+  imageUIFrameworkR: String,
+  Servis: String,
+  linkServis: String,
+  imageServis: String,
+  titleServer: String,
+  Server: String,
+  linkServer: String,
+  imageServer: String,
+  ServerS: String,
+  linkServerS: String,
+  imageServerS: String
 });
 </script>
 
@@ -46,18 +65,34 @@ defineProps({
           :framework="framework"
           :linkFramework="linkFramework"
           :imageFramework="imageFramework"
+          :frameworkR="frameworkR"
+          :linkFrameworkR="linkFrameworkR"
+          :imageFrameworkR="imageFrameworkR"
           :library="library"
           :linkLibrary="linkLibrary"
           :imageLibrary="imageLibrary"
           :UIFrameworkT="UIFrameworkT"
           :linkUIFrameworkT="linkUIFrameworkT"
           :imageUIFrameworkT="imageUIFrameworkT"
+          :UIFrameworkS="UIFrameworkS"
+          :linkUIFrameworkS="linkUIFrameworkS"
+          :imageUIFrameworkS="imageUIFrameworkS"
           :UIFrameworkP="UIFrameworkP"
           :linkUIFrameworkP="linkUIFrameworkP"
           :imageUIFrameworkP="imageUIFrameworkP"
-          :ServisNetlify="ServisNetlify"
-          :linkServisNetlify="linkServisNetlify"
-          :imageServisNetlify="imageServisNetlify"
+          :UIFrameworkR="UIFrameworkR"
+          :linkUIFrameworkR="linkUIFrameworkR"
+          :imageUIFrameworkR="imageUIFrameworkR"
+          :Servis="Servis"
+          :linkServis="linkServis"
+          :imageServis="imageServis"
+          :titleServer="titleServer"
+          :Server="Server"
+          :linkServer="linkServer"
+          :imageServer="imageServer"
+          :ServerS="ServerS"
+          :linkServerS="linkServerS"
+          :imageServerS="imageServerS"
         />
       </div>
     </div>

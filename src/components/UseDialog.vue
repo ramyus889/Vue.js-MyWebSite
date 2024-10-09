@@ -11,20 +11,30 @@
       @close="enableScroll"
     >
       <div class="flex place-content-center">
-        <div class="flex flex-col gap-5">
-          <img :src="image" alt="" class="max-w-[630px] rounded-xl" />
+        <div class="flex flex-col gap-5 max-w-[630px]">
+          <img :src="image" alt="" class="rounded-xl" />
         </div>
       </div>
-      <div class="text-[24px] font-bold text-center mt-10">Технологий</div>
-      <div class="flex place-content-center">
-        <div class="grid grid-cols-4 gap-36 mt-5 px-10">
+      <div class="text-[24px] font-bold text-center mt-14">Технологий</div>
+      <div class="flex sm:place-content-center place-self-start mb-3">
+        <div
+          class="grid min-[1760px]:grid-cols-4 xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-[2150px]:gap-20 gap-x-36 gap-y-10 mt-8 px-5"
+        >
           <div class="">
             <div class="text-[18px] font-bold mb-3">JS-фреймворк</div>
-            <div class="flex items-center gap-3">
-              <img :src="imageFramework" alt="" class="w-[30px]" />
-              <a :href="linkFramework" target="_blank" class="underline text-slate-400">{{
-                framework
-              }}</a>
+            <div class="flex flex-col gap-3">
+              <div class="flex items-center gap-3">
+                <img :src="imageFramework" alt="" class="w-[30px]" />
+                <a :href="linkFramework" target="_blank" class="underline text-slate-400">{{
+                  framework
+                }}</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <img :src="imageFrameworkR" alt="" class="w-[30px]" />
+                <a :href="linkFrameworkR" target="_blank" class="underline text-slate-400">{{
+                  frameworkR
+                }}</a>
+              </div>
             </div>
           </div>
           <div class="">
@@ -38,26 +48,57 @@
           </div>
           <div class="">
             <div class="text-[18px] font-bold mb-3">UI Фреймворк</div>
-            <div class="flex items-center gap-3 mb-2">
-              <img :src="imageUIFrameworkT" alt="" class="w-[30px]" />
-              <a :href="linkUIFrameworkT" target="_blank" class="underline text-slate-400">{{
-                UIFrameworkT
-              }}</a>
-            </div>
-            <div class="flex items-center gap-3">
-              <img :src="imageUIFrameworkP" alt="" class="w-[30px]" />
-              <a :href="linkUIFrameworkP" target="_blank" class="underline text-slate-400">{{
-                UIFrameworkP
-              }}</a>
+            <div class="">
+              <div class="flex items-center gap-3 mb-3">
+                <img :src="imageUIFrameworkT" alt="" class="w-[30px]" />
+                <a :href="linkUIFrameworkT" target="_blank" class="underline text-slate-400">{{
+                  UIFrameworkT
+                }}</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <img :src="imageUIFrameworkP" alt="" class="w-[30px]" />
+                <a :href="linkUIFrameworkP" target="_blank" class="underline text-slate-400">{{
+                  UIFrameworkP
+                }}</a>
+              </div>
+              <div class="flex items-center gap-3 mb-3">
+                <img :src="imageUIFrameworkS" alt="" class="w-[30px]" />
+                <a :href="linkUIFrameworkS" target="_blank" class="underline text-slate-400">{{
+                  UIFrameworkS
+                }}</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <img :src="imageUIFrameworkR" alt="" class="w-[30px]" />
+                <a :href="linkUIFrameworkR" target="_blank" class="underline text-slate-400">{{
+                  UIFrameworkR
+                }}</a>
+              </div>
             </div>
           </div>
           <div class="">
             <div class="text-[18px] font-bold mb-3">Сервис</div>
             <div class="flex items-center gap-3">
-              <img :src="imageServisNetlify" alt="" class="w-[30px]" />
-              <a :href="linkServisNetlify" target="_blank" class="underline text-slate-400">{{
-                ServisNetlify
+              <img :src="imageServis" alt="" class="w-[30px]" />
+              <a :href="linkServis" target="_blank" class="underline text-slate-400">{{
+                Servis
               }}</a>
+            </div>
+          </div>
+          <div class="">
+            <div class="text-[18px] font-bold mb-3">{{ titleServer }}</div>
+            <div class="flex flex-col gap-3">
+              <div class="flex items-center gap-3">
+                <img :src="imageServer" alt="" class="w-[30px]" />
+                <a :href="linkServer" target="_blank" class="underline text-slate-400">{{
+                  Server
+                }}</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <img :src="imageServerS" alt="" class="w-[30px]" />
+                <a :href="linkServerS" target="_blank" class="underline text-slate-400">{{
+                  ServerS
+                }}</a>
+              </div>
             </div>
           </div>
         </div>
@@ -81,6 +122,9 @@ defineProps({
   framework: String,
   linkFramework: String,
   imageFramework: String,
+  frameworkR: String,
+  linkFrameworkR: String,
+  imageFrameworkR: String,
   library: String,
   linkLibrary: String,
   imageLibrary: String,
@@ -90,9 +134,22 @@ defineProps({
   UIFrameworkP: String,
   linkUIFrameworkP: String,
   imageUIFrameworkP: String,
-  ServisNetlify: String,
-  linkServisNetlify: String,
-  imageServisNetlify: String
+  UIFrameworkS: String,
+  linkUIFrameworkS: String,
+  imageUIFrameworkS: String,
+  UIFrameworkR: String,
+  linkUIFrameworkR: String,
+  imageUIFrameworkR: String,
+  Servis: String,
+  linkServis: String,
+  imageServis: String,
+  titleServer: String,
+  Server: String,
+  linkServer: String,
+  imageServer: String,
+  ServerS: String,
+  linkServerS: String,
+  imageServerS: String
 });
 const disableScroll = () => {
   document.body.classList.add('no-scroll');
