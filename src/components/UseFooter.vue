@@ -4,11 +4,7 @@
       <img src="/img/Code/frontend.jpg" alt="" class="w-[45px] rounded-full" />
     </RouterLink>
     <div class="flex gap-5">
-      <a
-        href="https://hh.ru/resume/49c70c16ff0d649e7b0039ed1f62447766314b"
-        target="_blank"
-        class=""
-      >
+      <a href="https://hh.ru/profile/me?hhtmFrom=ProfileActivator" target="_blank" class="">
         <img src="/hhLogo.png" alt="" class="w-[45px]" />
       </a>
       <a href="https://github.com/ramyus889" target="_blank" class="">
