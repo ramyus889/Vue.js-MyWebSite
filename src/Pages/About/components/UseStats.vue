@@ -1,4 +1,5 @@
 <script setup>
+import Panel from 'primevue/panel';
 import ProgressBar from 'primevue/progressbar';
 
 const itemsProgressVue = [
@@ -112,8 +113,9 @@ const itemsProgressNext = [
       <div class="text-3xl font-bold">Уровень навыков (Vue.js)</div>
       <div class="flex flex-col gap-5 mt-6 max-w-[500px]">
         <div v-for="item in itemsProgressVue" :key="item.name" class="flex flex-col gap-3">
-          <div class="text-[22px] font-bold">{{ item.name }}</div>
-          <ProgressBar :value="item.value"></ProgressBar>
+          <Panel :header="item.name" toggleable>
+            <ProgressBar :value="item.value"></ProgressBar>
+          </Panel>
         </div>
       </div>
     </div>
@@ -121,8 +123,9 @@ const itemsProgressNext = [
       <div class="text-3xl font-bold">Уровень навыков (Next.js)</div>
       <div class="flex flex-col gap-5 mt-6 max-w-[500px]">
         <div v-for="item in itemsProgressNext" :key="item.name" class="flex flex-col gap-3">
-          <div class="text-[22px] font-bold">{{ item.name }}</div>
-          <ProgressBar :value="item.value"></ProgressBar>
+          <Panel :header="item.name" toggleable>
+            <ProgressBar :value="item.value"></ProgressBar>
+          </Panel>
         </div>
       </div>
     </div>
