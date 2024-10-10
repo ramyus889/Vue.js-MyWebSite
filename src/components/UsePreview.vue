@@ -44,7 +44,7 @@ defineProps({
 <template>
   <div
     data-aos="fade-up"
-    data-aos-delay="100"
+    data-aos-delay="300"
     class="md:max-w-[630px] relative w-full border border-slate-600 p-[15px] flex flex-col gap-4 justify-center"
   >
     <div class="flex justify-center items-center">
