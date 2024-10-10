@@ -31,6 +31,7 @@ import { items1, items2 } from '../Items';
       :Servis="item.Servis"
       :linkServis="item.linkServis"
       :imageServis="item.imageServis"
+      :delay="item.delay"
     />
   </div>
   <div class="border border-slate-600 mt-[100px]"></div>
@@ -73,6 +74,7 @@ import { items1, items2 } from '../Items';
       :ServerS="item.ServerS"
       :linkServerS="item.linkServerS"
       :imageServerS="item.imageServerS"
+      :delay="item.delay"
     />
   </div>
 </template>

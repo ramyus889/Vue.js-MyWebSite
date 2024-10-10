@@ -19,7 +19,8 @@ export const items1 = [
     imageUIFrameworkP: '/PrimeVue.svg',
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
-    imageServis: '/netlify.svg'
+    imageServis: '/netlify.svg',
+    delay: 100
   },
   {
     id: 2,
@@ -41,7 +42,8 @@ export const items1 = [
     imageUIFrameworkP: '/PrimeVue.svg',
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
-    imageServis: '/netlify.svg'
+    imageServis: '/netlify.svg',
+    delay: 200
   },
   {
     id: 3,
@@ -63,7 +65,8 @@ export const items1 = [
     imageUIFrameworkP: '/PrimeVue.svg',
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
-    imageServis: '/netlify.svg'
+    imageServis: '/netlify.svg',
+    delay: 300
   },
   {
     id: 4,
@@ -85,7 +88,8 @@ export const items1 = [
     imageUIFrameworkP: '/PrimeVue.svg',
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
-    imageServis: '/netlify.svg'
+    imageServis: '/netlify.svg',
+    delay: 400
   },
   {
     id: 5,
@@ -107,7 +111,8 @@ export const items1 = [
     imageUIFrameworkP: '/PrimeVue.svg',
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
-    imageServis: '/netlify.svg'
+    imageServis: '/netlify.svg',
+    delay: 500
   }
 ];
 export const items2 = [
@@ -137,7 +142,8 @@ export const items2 = [
     imageUIFrameworkR: '/Radix UI.svg',
     Servis: 'Vercel',
     linkServis: 'https://vercel.com/',
-    imageServis: '/vercel.svg'
+    imageServis: '/vercel.svg',
+    delay: 100
   },
   {
     id: 2,
@@ -165,7 +171,8 @@ export const items2 = [
     imageUIFrameworkR: '/Radix UI.svg',
     Servis: 'Vercel',
     linkServis: 'https://vercel.com/',
-    imageServis: '/vercel.svg'
+    imageServis: '/vercel.svg',
+    delay: 200
   },
   {
     id: 3,
@@ -201,7 +208,8 @@ export const items2 = [
     imageServer: '/Prisma.svg',
     ServerS: 'Supabase',
     linkServerS: 'https://www.supabase.io/',
-    imageServerS: '/Supabase.svg'
+    imageServerS: '/Supabase.svg',
+    delay: 300
   },
 
   {
@@ -230,7 +238,8 @@ export const items2 = [
     imageUIFrameworkR: '/Radix UI.svg',
     Servis: 'Vercel',
     linkServis: 'https://vercel.com/',
-    imageServis: '/vercel.svg'
+    imageServis: '/vercel.svg',
+    delay: 400
   },
   {
     id: 5,
@@ -258,6 +267,7 @@ export const items2 = [
     imageUIFrameworkR: '/Radix UI.svg',
     Servis: 'Vercel',
     linkServis: 'https://vercel.com/',
-    imageServis: '/vercel.svg'
+    imageServis: '/vercel.svg',
+    delay: 500
   }
 ];

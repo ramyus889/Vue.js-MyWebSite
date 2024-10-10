@@ -37,14 +37,15 @@ defineProps({
   imageServer: String,
   ServerS: String,
   linkServerS: String,
-  imageServerS: String
+  imageServerS: String,
+  delay: Number
 });
 </script>
 
 <template>
   <div
     data-aos="fade-up"
-    data-aos-delay="300"
+    :data-aos-delay="delay"
     class="md:max-w-[630px] relative w-full border border-slate-600 p-[15px] flex flex-col gap-4 justify-center"
   >
     <div class="flex justify-center items-center">
