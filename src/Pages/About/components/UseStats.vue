@@ -14,7 +14,7 @@ import ProgressBar from 'primevue/progressbar';
 import { ref } from 'vue';
 import UseDialogA from './UseDialogA.vue';
 
-import { itemsProgressNext, itemsProgressVue } from '../../../itemsStats';
+import { itemsProgressNext, itemsProgressVue } from '../itemsStats';
 
 const visible = ref(false);
 </script>
