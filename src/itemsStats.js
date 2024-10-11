@@ -25,7 +25,7 @@ export const itemsProgressVue = [
     name: 'JavaScript',
     value: 53,
     delay: 150,
-    headerName: 'Functions',
+    headerName: [{ name: 'Functions' }],
     js: [
       { name: 'map()', value: 62 },
       { name: 'function()', value: 76 },

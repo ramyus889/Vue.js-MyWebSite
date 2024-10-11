@@ -7,9 +7,8 @@
         </div>
       </template>
       <div class="flex flex-col gap-5">
-        <a href="#" @click="visible = false">Home</a>
-        <a href="#" @click="visible = false">About</a>
-        <a href="#" @click="visible = false">Contact</a>
+        <RouterLink to="/" @click="visible = false">Work</RouterLink>
+        <RouterLink to="/About" @click="visible = false">About</RouterLink>
       </div>
     </Drawer>
     <Button icon="pi pi-bars" @click="visible = true" text class="!text-white" />
