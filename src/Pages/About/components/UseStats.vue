@@ -1,3 +1,12 @@
+<script>
+export default {
+  name: 'UseStats',
+  mounted() {
+    document.title = 'Portfolio | About';
+  }
+};
+</script>
+
 <script setup>
 import Panel from 'primevue/panel';
 import ProgressBar from 'primevue/progressbar';
@@ -139,7 +148,7 @@ const itemsProgressNext = [
       >
         <div v-for="item in itemsProgressVue" :key="item.id" class="flex flex-col gap-3">
           <div data-aos="fade-up" :data-aos-delay="item.delay" class="">
-            <Panel :header="item.name" toggleable>
+            <Panel :header="item.name" toggleable collapsed>
               <ProgressBar :value="item.value"></ProgressBar>
               <UseDialogA :name="item.name" />
             </Panel>
@@ -156,7 +165,7 @@ const itemsProgressNext = [
       >
         <div v-for="item in itemsProgressNext" :key="item.id" class="flex flex-col gap-3">
           <div data-aos="fade-up" :data-aos-delay="item.delay" class="">
-            <Panel :header="item.name" toggleable>
+            <Panel :header="item.name" toggleable collapsed>
               <ProgressBar :value="item.value"></ProgressBar>
             </Panel>
           </div>

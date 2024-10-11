@@ -1,11 +1,11 @@
 <template>
   <div class="card flex justify-end">
-    <Button text label=" Open " @click="visible = true" />
+    <Button text label="Open" @click="visible = true" />
     <Dialog
       v-model:visible="visible"
       maximizable
       modal
-      header="Header"
+      :header="name"
       :style="{ width: '50rem' }"
       :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
     >
