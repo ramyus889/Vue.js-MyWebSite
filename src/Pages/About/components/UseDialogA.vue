@@ -1,15 +1,9 @@
 <template>
   <div class="card flex justify-end">
-    <Button text label="Open" @click="visible = true" />
-    <Dialog
-      v-model:visible="visible"
-      maximizable
-      modal
-      :header="name"
-      :style="{ width: '50rem' }"
-      :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
-    >
+    <Button text label="Open" class="!outline-none" @click="visible = true" />
+    <Dialog v-model:visible="visible" modal :header="name" :style="{ width: '50rem' }">
       <div class="">{{ name }}</div>
+      <div class=""></div>
     </Dialog>
   </div>
 </template>
