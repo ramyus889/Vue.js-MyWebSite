@@ -1,6 +1,7 @@
 <script setup>
 import Panel from 'primevue/panel';
 import ProgressBar from 'primevue/progressbar';
+import UseDialogA from './UseDialogA.vue';
 
 const itemsProgressVue = [
   {
@@ -140,6 +141,7 @@ const itemsProgressNext = [
           <div data-aos="fade-up" :data-aos-delay="item.delay" class="">
             <Panel :header="item.name" toggleable>
               <ProgressBar :value="item.value"></ProgressBar>
+              <UseDialogA :name="item.name" />
             </Panel>
           </div>
         </div>
