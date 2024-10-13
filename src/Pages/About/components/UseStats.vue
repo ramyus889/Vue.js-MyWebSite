@@ -38,7 +38,9 @@ const visible = ref(false);
           <div data-aos="fade-up" :data-aos-delay="item.delay" class="">
             <Panel :header="item.name" toggleable :collapsed="!visible">
               <ProgressBar :value="item.value"></ProgressBar>
-              <UseDialogA :name="item.name" :js="item.js" :headerName="item.headerName" />
+              <div v-if="item.headerName ? true : false" class="">
+                <UseDialogA :name="item.name" :headerName="item.headerName" />
+              </div>
             </Panel>
           </div>
         </div>
@@ -55,6 +57,9 @@ const visible = ref(false);
           <div data-aos="fade-up" :data-aos-delay="item.delay" class="">
             <Panel :header="item.name" toggleable :collapsed="!visible">
               <ProgressBar :value="item.value"></ProgressBar>
+              <div v-if="item.headerName ? true : false" class="">
+                <UseDialogA :name="item.name" :headerName="item.headerName" />
+              </div>
             </Panel>
           </div>
         </div>

@@ -4,14 +4,12 @@
     <Dialog v-model:visible="visible" modal :header="name" class="mx-5" :style="{ width: '50rem' }">
       <div class="flex flex-col gap-3">
         <div v-for="head in headerName" :key="head.id" class="">
-          <div class="">
-            <Panel :header="head.name" toggleable collapsed>
-              <div v-for="js in js" :key="js.id" class="py-2">
-                <div class="text-[18px]">{{ js.name }}</div>
-                <ProgressBar :value="js.value"></ProgressBar>
-              </div>
-            </Panel>
-          </div>
+          <Panel :header="head.name" toggleable collapsed>
+            <div v-for="headname in head.namejs" :key="headname.id" class="py-2">
+              <div class="text-[18px]">{{ headname.name }}</div>
+              <ProgressBar :value="headname.value"></ProgressBar>
+            </div>
+          </Panel>
         </div>
       </div>
     </Dialog>
@@ -29,7 +27,6 @@ const visible = ref(false);
 
 defineProps({
   name: String,
-  js: Object,
   headerName: Object
 });
 </script>
