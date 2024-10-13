@@ -1,6 +1,6 @@
 import UseHome from '@/components/UseHome.vue';
 import UseAbout from '@/Pages/About/UseAbout.vue';
-import UseDifferent from '@/Pages/Different/UseDifferent.vue';
+import UseWebSite from '@/Pages/Profile/UseWebSite.vue';
 
 export const routes = [
   {
@@ -12,7 +12,7 @@ export const routes = [
     component: UseAbout
   },
   {
-    path: '/Different',
-    component: UseDifferent
+    path: '/Profile',
+    component: UseWebSite
   }
 ];

@@ -15,9 +15,9 @@ import UseDrawer from './UseDrawer.vue';
         <UseDrawer />
       </div>
       <div class="sm:flex hidden gap-5 pe-5">
-        <RouterLink to="/Different" class="text-[#181818] cursor-default">Different</RouterLink>
+        <RouterLink to="/Profile" class="text-[#181818] cursor-default">Profile</RouterLink>
         <RouterLink to="/">Work</RouterLink>
-        <RouterLink to="/About">About</RouterLink>
+        <RouterLink to="/About" class="">About</RouterLink>
       </div>
     </header>
   </div>
