@@ -4,7 +4,6 @@
 
 .UserCard {
   display: inline-flex;
-  flex-direction: column;
   gap: 20px;
   padding-left: 40px;
   padding-right: 40px;

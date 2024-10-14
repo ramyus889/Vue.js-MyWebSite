@@ -1,6 +1,6 @@
 import UseHome from '@/components/UseHome.vue';
 import UseAbout from '@/Pages/About/UseAbout.vue';
-import UseWebSite from '@/Pages/Profile/UseWebSite.vue';
+import UseProfile from '@/Pages/Profile/UseProfile.vue';
 
 export const routes = [
   {
@@ -13,6 +13,6 @@ export const routes = [
   },
   {
     path: '/Profile',
-    component: UseWebSite
+    component: UseProfile
   }
 ];

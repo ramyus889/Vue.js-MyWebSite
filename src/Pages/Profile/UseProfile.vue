@@ -7,10 +7,10 @@ export default {
 };
 </script>
 <script setup>
-import UseCard from './components/UseCard.vue';
+import UseMainProfile from './components/UseMainProfile.vue';
 </script>
 <template>
   <div class="">
-    <UseCard />
+    <UseMainProfile />
   </div>
 </template>

@@ -7,17 +7,16 @@ import UseDrawer from './UseDrawer.vue';
       <RouterLink to="/" class="flex gap-3 items-center">
         <img src="/img/Code/frontend.jpg" alt="" class="w-[60px] rounded-full" />
         <div class="*:font-bold leading-[23px] text-xl">
-          <div class="">Frontend</div>
-          <div class="">Developer</div>
+          <div class="">PortfolioDev</div>
         </div>
       </RouterLink>
       <div class="sm:hidden flex">
         <UseDrawer />
       </div>
       <div class="sm:flex hidden gap-5 pe-5">
-        <RouterLink to="/Profile" class="text-[#181818] cursor-default">Profile</RouterLink>
+        <RouterLink to="/Profile" class="">Profile</RouterLink>
         <RouterLink to="/">Work</RouterLink>
-        <RouterLink to="/About" class="">About</RouterLink>
+        <RouterLink to="/About" class="">Skills</RouterLink>
       </div>
     </header>
   </div>
