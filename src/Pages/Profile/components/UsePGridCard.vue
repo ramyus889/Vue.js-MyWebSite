@@ -5,7 +5,8 @@ import IconField from 'primevue/iconfield';
 import InputIcon from 'primevue/inputicon';
 import InputText from 'primevue/inputtext';
 import { computed, ref } from 'vue';
-import UseMenu from './UseMenu.vue';
+import UseCardItem from './UseCardItem.vue';
+import UseCardItemFlex from './UseCardItemFlex.vue';
 
 const items = [
   {
@@ -137,78 +138,30 @@ const show = ref(true);
         v-auto-animate
       >
         <div v-for="item in filteredItems" :key="item.id" class="">
-          <div
-            data-aos="fade-up"
-            :data-aos-delay="item.delay"
-            class="sm:px-[24px] px-[15px] py-[22px] border border-[#242424] shadow-lg bg-[#0A0A0A] rounded-xl min-[1100px]:max-w-[435px]"
-          >
-            <div class="flex justify-between">
-              <div class="inline-flex flex-col gap-2">
-                <div class="flex gap-2 items-center">
-                  <div class=""><img src="/vercel.ico" alt="" class="w-[32px]" /></div>
-                  <div class="flex flex-col truncate">
-                    <div class="text-[14px] font-bold">{{ item.title }}</div>
-                    <a
-                      :href="item.linkTitle2"
-                      target="_blank"
-                      class="text-[#a1a1a1] hover:underline"
-                      >{{ item.linkTitle1 }}</a
-                    >
-                  </div>
-                </div>
-                <div
-                  class="bg-[#1a1a1a] px-[14px] py-[8px] rounded-full flex place-content-center gap-1 items-center"
-                >
-                  <div class=""><img src="/github.svg" alt="" class="w-[16px]" /></div>
-                  <a :href="item.linkGithub" target="_blank" class="truncate"
-                    >ramyus889/{{ item.gitTitle }}</a
-                  >
-                </div>
-              </div>
-              <div class="">
-                <UseMenu />
-              </div>
-            </div>
-          </div>
+          <UseCardItem
+            :id="item.id"
+            :title="item.title"
+            :linkTitle1="item.linkTitle1"
+            :linkTitle2="item.linkTitle2"
+            :gitTitle="item.gitTitle"
+            :linkGithub="item.linkGithub"
+            :delay="item.delay"
+          />
         </div>
       </div>
     </div>
     <div v-else class="">
       <div class="flex flex-col gap-5 mt-[50px]" v-auto-animate>
         <div v-for="item in filteredItems" :key="item.id" class="">
-          <div
-            data-aos="fade-up"
-            :data-aos-delay="item.delay"
-            class="px-[14px] py-[8px] rounded-full flex place-content-start gap-1 items-center"
-          >
-            <div class=""><img src="/github.svg" alt="" class="w-[16px]" /></div>
-            <a :href="item.linkGithub" target="_blank" class="">ramyus889/{{ item.gitTitle }}</a>
-          </div>
-          <div
-            data-aos="fade-up"
-            :data-aos-delay="item.delay"
-            class="sm:px-[24px] px-[15px] py-[22px] shadow-lg border border-[#242424] bg-[#0A0A0A] rounded-xl"
-          >
-            <div class="flex justify-between">
-              <div class="inline-flex flex-col gap-2">
-                <div class="flex gap-2 items-center">
-                  <div class=""><img src="/vercel.ico" alt="" class="w-[32px]" /></div>
-                  <div class="flex flex-col truncate">
-                    <div class="text-[14px] font-bold">{{ item.title }}</div>
-                    <a
-                      :href="item.linkTitle2"
-                      target="_blank"
-                      class="text-[#a1a1a1] hover:underline"
-                      >{{ item.linkTitle1 }}</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <UseMenu />
-              </div>
-            </div>
-          </div>
+          <UseCardItemFlex
+            :id="item.id"
+            :title="item.title"
+            :linkTitle1="item.linkTitle1"
+            :linkTitle2="item.linkTitle2"
+            :gitTitle="item.gitTitle"
+            :linkGithub="item.linkGithub"
+            :delay="item.delay"
+          />
         </div>
       </div>
     </div>
