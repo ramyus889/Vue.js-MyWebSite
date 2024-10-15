@@ -1,5 +1,6 @@
 <script setup>
-import UseFavorite from './UseFavorite.vue';
+import Button from 'primevue/button';
+import { ref } from 'vue';
 
 defineProps({
   id: Number,
@@ -10,6 +11,8 @@ defineProps({
   linkGithub: String,
   delay: Number
 });
+
+const starShow = ref(false);
 </script>
 <template>
   <div
@@ -36,7 +39,13 @@ defineProps({
         </div>
       </div>
       <div class="">
-        <UseFavorite />
+        <Button
+          type="button"
+          text
+          :icon="starShow ? 'pi pi-star-fill' : 'pi pi-star'"
+          @click="starShow = !starShow"
+        >
+        </Button>
       </div>
     </div>
   </div>

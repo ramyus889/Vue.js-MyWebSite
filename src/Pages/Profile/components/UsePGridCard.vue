@@ -1,12 +1,8 @@
 <script setup>
-import Button from 'primevue/button';
-import ButtonGroup from 'primevue/buttongroup';
-import IconField from 'primevue/iconfield';
-import InputIcon from 'primevue/inputicon';
-import InputText from 'primevue/inputtext';
 import { computed, ref } from 'vue';
-import UseCardItem from './UseCardItem.vue';
 import UseCardItemFlex from './UseCardItemFlex.vue';
+import UseCardItemGrid from './UseCardItemGrid.vue';
+import UseInputButton from './UseInputButton.vue';
 
 const items = [
   {
@@ -102,67 +98,56 @@ const items = [
 ];
 
 const searchInput = ref('');
+const show = ref(true);
+
+function updateSearchInput(value) {
+  searchInput.value = value;
+}
+
 const filteredItems = computed(() => {
   return items.filter((item) => {
     return item.title.toLowerCase().includes(searchInput.value.toLowerCase());
   });
 });
-
-const show = ref(true);
 </script>
 <template>
   <div class="mt-[50px] mb-[330px] px-5">
-    <div class="flex place-content-center md:justify-between">
-      <IconField class="" data-aos="fade-up" data-aos-delay="300">
-        <InputIcon class="pi pi-search" />
-        <InputText v-model="searchInput" placeholder="Search" class="w-full" />
-      </IconField>
-
-      <ButtonGroup
-        class="border border-[#242424] rounded-xl md:block hidden"
-        data-aos="fade-up"
-        data-aos-delay="300"
-      >
-        <Button
-          text
-          icon="pi pi-th-large"
-          @click="show = true"
-          :class="show ? '!bg-[#322e2e]' : ''"
-        />
-        <Button text icon="pi pi-list" @click="show = false" :class="show ? '' : '!bg-[#322e2e]'" />
-      </ButtonGroup>
-    </div>
+    <UseInputButton
+      :show="show"
+      @update:show="show = $event"
+      @update:searchInput="updateSearchInput"
+    />
     <div v-if="show" class="flex place-content-center">
       <div
         class="grid grid-cols-1 md:grid-cols-2 min-[1100px]:grid-cols-3 gap-5 mt-[50px] w-full"
         v-auto-animate
       >
-        <div v-for="item in filteredItems" :key="item.id" class="">
-          <UseCardItem
-            :id="item.id"
-            :title="item.title"
-            :linkTitle1="item.linkTitle1"
-            :linkTitle2="item.linkTitle2"
-            :gitTitle="item.gitTitle"
-            :linkGithub="item.linkGithub"
-            :delay="item.delay"
-          />
-        </div>
+        <UseCardItemGrid
+          v-for="item in filteredItems"
+          :key="item.id"
+          :id="item.id"
+          :title="item.title"
+          :linkTitle1="item.linkTitle1"
+          :linkTitle2="item.linkTitle2"
+          :gitTitle="item.gitTitle"
+          :delay="item.delay"
+          :linkGithub="item.linkGithub"
+        />
       </div>
     </div>
     <div v-else class="">
       <div class="flex flex-col gap-5 mt-[50px]" v-auto-animate>
-        <div v-for="item in filteredItems" :key="item.id" class="">
-          <UseCardItemFlex
-            :id="item.id"
-            :title="item.title"
-            :linkTitle1="item.linkTitle1"
-            :linkTitle2="item.linkTitle2"
-            :gitTitle="item.gitTitle"
-            :linkGithub="item.linkGithub"
-            :delay="item.delay"
-          />
-        </div>
+        <UseCardItemFlex
+          v-for="item in filteredItems"
+          :key="item.id"
+          :id="item.id"
+          :title="item.title"
+          :linkTitle1="item.linkTitle1"
+          :linkTitle2="item.linkTitle2"
+          :gitTitle="item.gitTitle"
+          :delay="item.delay"
+          :linkGithub="item.linkGithub"
+        />
       </div>
     </div>
   </div>
