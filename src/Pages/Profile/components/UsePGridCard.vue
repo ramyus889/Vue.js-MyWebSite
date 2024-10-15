@@ -112,12 +112,16 @@ const show = ref(true);
 <template>
   <div class="mt-[50px] mb-[330px] px-5">
     <div class="flex place-content-center md:justify-between">
-      <IconField class="">
+      <IconField class="" data-aos="fade-up" data-aos-delay="300">
         <InputIcon class="pi pi-search" />
         <InputText v-model="searchInput" placeholder="Search" class="w-full" />
       </IconField>
 
-      <ButtonGroup class="border border-[#242424] rounded-xl md:block hidden">
+      <ButtonGroup
+        class="border border-[#242424] rounded-xl md:block hidden"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <Button
           text
           icon="pi pi-th-large"
@@ -136,7 +140,7 @@ const show = ref(true);
           <div
             data-aos="fade-up"
             :data-aos-delay="item.delay"
-            class="sm:px-[24px] px-[15px] py-[22px] border border-[#242424] bg-[#0A0A0A] rounded-xl min-[1100px]:max-w-[435px]"
+            class="sm:px-[24px] px-[15px] py-[22px] border border-[#242424] shadow-lg bg-[#0A0A0A] rounded-xl min-[1100px]:max-w-[435px]"
           >
             <div class="flex justify-between">
               <div class="inline-flex flex-col gap-2">
@@ -172,12 +176,18 @@ const show = ref(true);
     <div v-else class="">
       <div class="flex flex-col gap-5 mt-[50px]" v-auto-animate>
         <div v-for="item in filteredItems" :key="item.id" class="">
-          <div class="px-[14px] py-[8px] rounded-full flex place-content-start gap-1 items-center">
+          <div
+            data-aos="fade-up"
+            :data-aos-delay="item.delay"
+            class="px-[14px] py-[8px] rounded-full flex place-content-start gap-1 items-center"
+          >
             <div class=""><img src="/github.svg" alt="" class="w-[16px]" /></div>
             <a :href="item.linkGithub" target="_blank" class="">ramyus889/{{ item.gitTitle }}</a>
           </div>
           <div
-            class="sm:px-[24px] px-[15px] py-[22px] border border-[#242424] bg-[#0A0A0A] rounded-xl"
+            data-aos="fade-up"
+            :data-aos-delay="item.delay"
+            class="sm:px-[24px] px-[15px] py-[22px] shadow-lg border border-[#242424] bg-[#0A0A0A] rounded-xl"
           >
             <div class="flex justify-between">
               <div class="inline-flex flex-col gap-2">
