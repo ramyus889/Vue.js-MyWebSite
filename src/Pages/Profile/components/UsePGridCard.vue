@@ -112,8 +112,13 @@ const show = ref(true);
       </IconField>
 
       <ButtonGroup class="border border-[#242424] rounded-xl">
-        <Button text icon="pi pi-th-large" @click="show = true" />
-        <Button text icon="pi pi-list" @click="show = false" />
+        <Button
+          text
+          icon="pi pi-th-large"
+          @click="show = true"
+          :class="show ? '!bg-[#322e2e]' : ''"
+        />
+        <Button text icon="pi pi-list" @click="show = false" :class="show ? '' : '!bg-[#322e2e]'" />
       </ButtonGroup>
     </div>
     <div v-if="show" class="flex place-content-center">
