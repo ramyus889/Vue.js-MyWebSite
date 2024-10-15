@@ -7,6 +7,7 @@ export default {
 };
 </script>
 <script setup>
+import UseFooter from '@/components/UseFooter.vue';
 import UseMainProfile from './components/UseMainProfile.vue';
 import UsePGridCard from './components/UsePGridCard.vue';
 </script>
@@ -17,4 +18,5 @@ import UsePGridCard from './components/UsePGridCard.vue';
     <UseMainProfile />
     <UsePGridCard />
   </div>
+  <UseFooter />
 </template>
