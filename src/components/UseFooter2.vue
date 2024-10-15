@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
-    <footer
-      class="border-t border-slate-600 mt-[150px] flex justify-between py-5 px-5 items-center absolute -bottom-[340px] left-0 right-0"
+    <div
+      class="border-t border-slate-600 mt-[100px] flex justify-between py-5 px-5 items-center absolute -bottom-[340px] left-0 right-0"
     >
       <RouterLink to="/" class="flex gap-3 items-center">
         <img src="/img/Code/frontend.jpg" alt="" class="w-[45px] rounded-full" />
@@ -18,6 +18,6 @@
           <img src="/github.svg" alt="" class="w-[45px]" />
         </a>
       </div>
-    </footer>
+    </div>
   </div>
 </template>

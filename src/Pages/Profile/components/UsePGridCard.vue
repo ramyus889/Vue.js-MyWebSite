@@ -14,7 +14,8 @@ const items = [
     linkTitle1: '31-saa-s.vercel.app',
     linkTitle2: 'https://31-saa-s.vercel.app/',
     gitTitle: '31-saa-s',
-    linkGithub: 'https://github.com/ramyus889/31SaaS'
+    linkGithub: 'https://github.com/ramyus889/31SaaS',
+    delay: 100
   },
   {
     id: 2,
@@ -22,7 +23,8 @@ const items = [
     linkTitle1: 'mirror-world-seven.vercel.app',
     linkTitle2: 'https://mirror-world-seven.vercel.app/',
     gitTitle: 'MirrorWorld',
-    linkGithub: 'https://github.com/ramyus889/MirrorWorld'
+    linkGithub: 'https://github.com/ramyus889/MirrorWorld',
+    delay: 150
   },
   {
     id: 3,
@@ -30,7 +32,8 @@ const items = [
     linkTitle1: 'next-js-pizza-sigma.vercel.app',
     linkTitle2: 'https://next-js-pizza-sigma.vercel.app/',
     gitTitle: 'Next.js-Pizza',
-    linkGithub: 'https://github.com/ramyus889/Next.js-Pizza'
+    linkGithub: 'https://github.com/ramyus889/Next.js-Pizza',
+    delay: 200
   },
   {
     id: 4,
@@ -38,7 +41,8 @@ const items = [
     linkTitle1: 'lesson-english2-two.vercel.app',
     linkTitle2: 'https://lesson-english2-two.vercel.app/',
     gitTitle: 'LessonEnglish2',
-    linkGithub: 'https://github.com/ramyus889/LessonEnglish2'
+    linkGithub: 'https://github.com/ramyus889/LessonEnglish2',
+    delay: 250
   },
   {
     id: 5,
@@ -46,7 +50,8 @@ const items = [
     linkTitle1: 'personalwebfrontend.vercel.app',
     linkTitle2: 'https://personalwebfrontend.vercel.app/',
     gitTitle: 'Portfolio',
-    linkGithub: 'https://github.com/ramyus889/Portfolio'
+    linkGithub: 'https://github.com/ramyus889/Portfolio',
+    delay: 300
   },
   {
     id: 6,
@@ -54,7 +59,8 @@ const items = [
     linkTitle1: 'vuesneakers747.netlify.app',
     linkTitle2: 'https://vuesneakers747.netlify.app',
     gitTitle: 'Vue.js---Sneakers',
-    linkGithub: 'https://github.com/ramyus889/Vue.js---Sneakers'
+    linkGithub: 'https://github.com/ramyus889/Vue.js---Sneakers',
+    delay: 350
   },
   {
     id: 7,
@@ -62,7 +68,8 @@ const items = [
     linkTitle1: 'magedeveloper.netlify.app',
     linkTitle2: 'https://magedeveloper.netlify.app',
     gitTitle: 'Vue.js--Web-Mage',
-    linkGithub: 'https://github.com/ramyus889/Vue.js--Web-Mage'
+    linkGithub: 'https://github.com/ramyus889/Vue.js--Web-Mage',
+    delay: 400
   },
   {
     id: 8,
@@ -70,7 +77,8 @@ const items = [
     linkTitle1: 'web-illa-cloud.netlify.app',
     linkTitle2: 'https://web-illa-cloud.netlify.app',
     gitTitle: 'Vue.js---Web-Illa',
-    linkGithub: 'https://github.com/ramyus889/Vue.js---Web-Illa'
+    linkGithub: 'https://github.com/ramyus889/Vue.js---Web-Illa',
+    delay: 450
   },
   {
     id: 9,
@@ -78,7 +86,8 @@ const items = [
     linkTitle1: 'fastgendev.netlify.app',
     linkTitle2: 'https://fastgendev.netlify.app',
     gitTitle: 'Vue.js---fastgen',
-    linkGithub: 'https://github.com/ramyus889/Vue.js---fastgen'
+    linkGithub: 'https://github.com/ramyus889/Vue.js---fastgen',
+    delay: 500
   },
   {
     id: 10,
@@ -86,7 +95,8 @@ const items = [
     linkTitle1: 'hyperwebdev.netlify.app',
     linkTitle2: 'https://hyperwebdev.netlify.app',
     gitTitle: 'Hyperswitch',
-    linkGithub: 'https://github.com/ramyus889/Hyperswitch'
+    linkGithub: 'https://github.com/ramyus889/Hyperswitch',
+    delay: 550
   }
 ];
 
@@ -100,7 +110,7 @@ const filteredItems = computed(() => {
 const show = ref(true);
 </script>
 <template>
-  <div class="mt-[50px] px-5">
+  <div class="mt-[50px] mb-[330px] px-5">
     <div class="flex place-content-center md:justify-between">
       <IconField class="">
         <InputIcon class="pi pi-search" />
@@ -124,6 +134,8 @@ const show = ref(true);
       >
         <div v-for="item in filteredItems" :key="item.id" class="">
           <div
+            data-aos="fade-up"
+            :data-aos-delay="item.delay"
             class="sm:px-[24px] px-[15px] py-[22px] border border-[#242424] bg-[#0A0A0A] rounded-xl min-[1100px]:max-w-[435px]"
           >
             <div class="flex justify-between">

@@ -6,7 +6,7 @@
           <Avatar image="/img/Code/frontend.jpg" shape="circle" />
         </div>
       </template>
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 text-[17px]">
         <RouterLink to="/" @click="visible = false">Work</RouterLink>
         <RouterLink to="/About" @click="visible = false">About</RouterLink>
         <RouterLink to="/Profile" @click="visible = false" class="">Profile</RouterLink>
