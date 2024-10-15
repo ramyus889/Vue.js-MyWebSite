@@ -9,9 +9,7 @@
       <div class="flex flex-col gap-5">
         <RouterLink to="/" @click="visible = false">Work</RouterLink>
         <RouterLink to="/About" @click="visible = false">About</RouterLink>
-        <RouterLink to="/Different" @click="visible = false" class="text-[#181818] cursor-default"
-          >Different</RouterLink
-        >
+        <RouterLink to="/Profile" @click="visible = false" class="">Profile</RouterLink>
       </div>
     </Drawer>
     <Button icon="pi pi-bars" @click="visible = true" text class="!text-white" />
