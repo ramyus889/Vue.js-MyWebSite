@@ -101,17 +101,13 @@ const show = ref(true);
 </script>
 <template>
   <div class="mt-[50px] px-5">
-    <div class="flex justify-between">
+    <div class="flex place-content-center md:justify-between">
       <IconField class="">
         <InputIcon class="pi pi-search" />
-        <InputText
-          v-model="searchInput"
-          placeholder="Search"
-          class="min-[370px]:w-[240px] w-[210px]"
-        />
+        <InputText v-model="searchInput" placeholder="Search" class="w-full" />
       </IconField>
 
-      <ButtonGroup class="border border-[#242424] rounded-xl">
+      <ButtonGroup class="border border-[#242424] rounded-xl md:block hidden">
         <Button
           text
           icon="pi pi-th-large"
@@ -134,7 +130,7 @@ const show = ref(true);
               <div class="inline-flex flex-col gap-2">
                 <div class="flex gap-2 items-center">
                   <div class=""><img src="/vercel.ico" alt="" class="w-[32px]" /></div>
-                  <div class="flex flex-col">
+                  <div class="flex flex-col truncate">
                     <div class="text-[14px] font-bold">{{ item.title }}</div>
                     <a
                       :href="item.linkTitle2"
