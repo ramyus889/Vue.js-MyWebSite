@@ -45,10 +45,10 @@ const filteredItems = computed(() => {
           :key="item.id"
           :id="item.id"
           :title="item.title"
+          :delay="item.delay"
+          :gitTitle="item.gitTitle"
           :linkTitle1="item.linkTitle1"
           :linkTitle2="item.linkTitle2"
-          :gitTitle="item.gitTitle"
-          :delay="item.delay"
           :linkGithub="item.linkGithub"
         />
       </div>
@@ -60,10 +60,10 @@ const filteredItems = computed(() => {
           :key="item.id"
           :id="item.id"
           :title="item.title"
+          :delay="item.delay"
+          :gitTitle="item.gitTitle"
           :linkTitle1="item.linkTitle1"
           :linkTitle2="item.linkTitle2"
-          :gitTitle="item.gitTitle"
-          :delay="item.delay"
           :linkGithub="item.linkGithub"
         />
       </div>
