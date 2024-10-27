@@ -113,6 +113,29 @@ export const items1 = [
     linkServis: 'https://www.netlify.com/',
     imageServis: '/netlify.svg',
     delay: 500
+  },
+  {
+    id: 6,
+    image: '/Screenshot_11.png',
+    link: 'https://webupstash.netlify.app/',
+    description: 'webupstash.netlify.app',
+    title: 'Upstash',
+    framework: 'Vue.js',
+    linkFramework: 'https://vuejs.org/',
+    imageFramework: '/vue.svg',
+    library: 'AOS',
+    linkLibrary: 'https://michalsnik.github.io/aos/',
+    imageLibrary: '/AOS.svg',
+    UIFrameworkT: 'Tailwind CSS',
+    linkUIFrameworkT: 'https://tailwindcss.com/',
+    imageUIFrameworkT: '/tailwindcss.svg',
+    UIFrameworkP: 'PrimeVue',
+    linkUIFrameworkP: 'https://primevue.org/',
+    imageUIFrameworkP: '/PrimeVue.svg',
+    Servis: 'Netlify',
+    linkServis: 'https://www.netlify.com/',
+    imageServis: '/netlify.svg',
+    delay: 500
   }
 ];
 export const items2 = [
