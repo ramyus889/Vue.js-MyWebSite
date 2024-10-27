@@ -22,7 +22,7 @@ const visible = ref(false);
   <div class="flex flex-col gap-10 mx-10">
     <div class="">
       <Button
-        :label="visible ? 'Show' : 'Hide'"
+        :label="visible ? 'Hide' : 'Show'"
         class="!outline-none"
         @click="visible = !visible"
       />
