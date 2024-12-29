@@ -73,30 +73,6 @@ export const items1 = [
   },
   {
     id: 4,
-    image: '/Screenshot_4.png',
-    link: 'https://vuesneakers747.netlify.app',
-    gitLink: 'https://github.com/ramyus889/Vue.js---Sneakers',
-    description: 'vuesneakers747.netlify.app',
-    title: 'VueSneakers',
-    framework: 'Vue.js',
-    linkFramework: 'https://vuejs.org/',
-    imageFramework: '/vue.svg',
-    library: 'AOS',
-    linkLibrary: 'https://michalsnik.github.io/aos/',
-    imageLibrary: '/AOS.svg',
-    UIFrameworkT: 'Tailwind CSS',
-    linkUIFrameworkT: 'https://tailwindcss.com/',
-    imageUIFrameworkT: '/tailwindcss.svg',
-    UIFrameworkP: 'PrimeVue',
-    linkUIFrameworkP: 'https://primevue.org/',
-    imageUIFrameworkP: '/PrimeVue.svg',
-    Servis: 'Netlify',
-    linkServis: 'https://www.netlify.com/',
-    imageServis: '/netlify.svg',
-    delay: 400
-  },
-  {
-    id: 5,
     image: '/Screenshot_5.png',
     link: 'https://hyperwebdev.netlify.app',
     gitLink: 'https://github.com/ramyus889/Hyperswitch',
@@ -120,7 +96,7 @@ export const items1 = [
     delay: 500
   },
   {
-    id: 6,
+    id: 5,
     image: '/Screenshot_11.png',
     link: 'https://webupstash.netlify.app/',
     gitLink: 'https://github.com/ramyus889/Vue.js---Web---Upstash',
@@ -144,7 +120,7 @@ export const items1 = [
     delay: 550
   },
   {
-    id: 7,
+    id: 6,
     image: '/Screenshot_12.png',
     link: 'https://freesets-api.netlify.app/',
     gitLink: 'https://github.com/ramyus889/Vue.js---Freesets',
@@ -168,7 +144,7 @@ export const items1 = [
     delay: 600
   },
   {
-    id: 8,
+    id: 7,
     image: '/Screenshot_13.png',
     link: 'https://mytestvue747.netlify.app/',
     gitLink: 'https://github.com/ramyus889/Vue.js---Test',
