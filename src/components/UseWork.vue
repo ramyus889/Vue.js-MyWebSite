@@ -12,18 +12,17 @@ export default {
     <p
       data-aos="fade-up"
       data-aos-delay="100"
-      class="text-7xl font-bold text-center uppercase pb-5"
+      class="pb-5 font-bold text-center uppercase text-7xl"
     >
       Work
     </p>
 
     <div class="">
-      <div class="items-center flex justify-center">
+      <div class="flex items-center justify-center">
         <div class="text-center text-[20px] pt-5 max-w-[500px]">
           <div data-aos="fade-up" data-aos-delay="200" class="px-5">
             Эти сайты были разработаны мной исключительно для включения в портфолио и были
-            развернуты на платформе <span class="text-green-500">Netlify (Vue.js)</span> и
-            <span class="text-black bg-white px-1 rounded-lg">Vercel (Next.js)</span>.
+            развернуты на платформе <span class="text-green-500">Netlify (Vue.js)</span>
           </div>
         </div>
       </div>
