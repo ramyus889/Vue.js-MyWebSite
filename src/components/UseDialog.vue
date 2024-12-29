@@ -1,24 +1,23 @@
 <template>
-  <div class="flex place-content-start card">
+  <div class="flex place-content-start">
     <Button label="Frameworks " @click="visible = true" text />
     <Dialog
       v-model:visible="visible"
       modal
       :header="title"
+      class=""
       :style="{ width: '50vw' }"
       :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
-      @open="disableScroll"
-      @close="enableScroll"
     >
       <div class="flex place-content-center">
-        <div class="flex flex-col gap-5 max-w-[630px]">
+        <div class="flex flex-col gap-5 max-w-[580px]">
           <img :src="image" alt="" class="rounded-xl" />
         </div>
       </div>
       <div class="text-[24px] font-bold text-center mt-14">Технологий</div>
-      <div class="flex mb-3 sm:place-content-center place-self-start">
+      <div class="flex mb-3 place-content-center">
         <div
-          class="grid min-[1760px]:grid-cols-4 xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-[2150px]:gap-20 gap-x-36 gap-y-10 mt-8 px-1"
+          class="grid min-[1760px]:grid-cols-4 xl:grid-cols-3 grid-cols-2 max-[2150px]:gap-20 max-[450px]:gap-x-12 max-[410px]:grid-cols-1 gap-x-36 gap-y-10 mt-8 px-1"
         >
           <div class="">
             <div class="text-[18px] font-bold mb-3">JS-фреймворк</div>
@@ -151,21 +150,9 @@ defineProps({
   linkServerS: String,
   imageServerS: String
 });
-const disableScroll = () => {
-  document.body.classList.add('no-scroll');
-};
-
-const enableScroll = () => {
-  document.body.classList.remove('no-scroll');
-};
 </script>
 
 <style>
-.no-scroll {
-  overflow: hidden;
-  height: 100%; /* Блокировка высоты окна */
-  transition: overflow 0.5s ease; /* Плавный переход для overflow */
-}
 body {
   transition: overflow 0.5s ease; /* Плавный переход для скролла */
 }
