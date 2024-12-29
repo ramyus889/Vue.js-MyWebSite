@@ -6,7 +6,7 @@ import { items1 } from '../Items';
 <template>
   <div class="mt-2 border border-slate-600"></div>
   <div data-aos="fade-up" data-aos-delay="300" class="px-5 pt-6 pb-3 text-3xl font-bold">
-    Vue.js (Netlify)
+    Vue.js
   </div>
   <div class="grid grid-cols-1 mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     <UsePreview
