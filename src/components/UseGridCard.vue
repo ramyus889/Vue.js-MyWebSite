@@ -4,14 +4,15 @@ import UsePreview from './UsePreview.vue';
 import { items1, items2 } from '../Items';
 </script>
 <template>
-  <div class="border border-slate-600 mt-2"></div>
-  <div data-aos="fade-up" data-aos-delay="300" class="pt-6 pb-3 px-5 text-3xl font-bold">
+  <div class="mt-2 border border-slate-600"></div>
+  <div data-aos="fade-up" data-aos-delay="300" class="px-5 pt-6 pb-3 text-3xl font-bold">
     Vue.js (Netlify)
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5">
+  <div class="grid grid-cols-1 mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     <UsePreview
       v-for="item in items1"
       :key="item.id"
+      :gitLink="item.gitLink"
       :image="item.image"
       :link="item.link"
       :description="item.description"
@@ -35,14 +36,15 @@ import { items1, items2 } from '../Items';
     />
   </div>
   <div class="border border-slate-600 mt-[100px]"></div>
-  <div data-aos="fade-up" data-aos-delay="200" class="pt-20 pb-3 px-5 text-3xl font-bold">
+  <div data-aos="fade-up" data-aos-delay="200" class="px-5 pt-20 pb-3 text-3xl font-bold">
     Next.js (Vercel)
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5">
+  <div class="grid grid-cols-1 mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     <UsePreview
       v-for="item in items2"
       :key="item.id"
       :image="item.image"
+      :gitLink="item.gitLink"
       :link="item.link"
       :description="item.description"
       :title="item.title"

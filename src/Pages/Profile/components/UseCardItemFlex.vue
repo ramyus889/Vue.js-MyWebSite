@@ -31,8 +31,8 @@ const starShow = ref(false);
     >
       <div class="flex justify-between">
         <div class="inline-flex flex-col gap-2">
-          <div class="flex gap-2 items-center">
-            <div class=""><img src="/vercel.ico" alt="" class="w-[32px]" /></div>
+          <div class="flex items-center gap-2">
+            <div class=""><img src="/netlify.svg" alt="" class="w-[32px]" /></div>
             <div class="flex flex-col truncate">
               <div class="text-[14px] font-bold">{{ title }}</div>
               <a :href="linkTitle2" target="_blank" class="text-[#a1a1a1] hover:underline">{{

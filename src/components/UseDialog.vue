@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center card">
+  <div class="flex place-content-start card">
     <Button label="Frameworks " @click="visible = true" text />
     <Dialog
       v-model:visible="visible"

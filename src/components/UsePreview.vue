@@ -3,6 +3,7 @@ import UseDialog from './UseDialog.vue';
 
 defineProps({
   id: Number,
+  gitLink: String,
   image: String,
   link: String,
   description: String,
@@ -46,60 +47,64 @@ defineProps({
   <div
     data-aos="fade-up"
     :data-aos-delay="delay"
-    class="md:max-w-[630px] relative w-full border border-slate-600 p-[15px] flex flex-col gap-4 justify-center"
+    class="md:max-w-[630px] relative w-full border border-slate-600 p-[15px] flex flex-col gap-5 justify-between"
   >
-    <div class="flex justify-center items-center">
+    <div class="">
+      <div class="flex justify-between items-center gap-10 text-[14px] px-3">
+        <a :href="link" target="_blank" class="truncate text-start hover:underline">{{
+          description
+        }}</a>
+
+        <a :href="gitLink" target="_blank" class="cursor-pointer"
+          ><img src="/github.svg" width="25" alt=""
+        /></a>
+      </div>
+      <UseDialog
+        :link="link"
+        :image="image"
+        :description="description"
+        :title="title"
+        :framework="framework"
+        :linkFramework="linkFramework"
+        :imageFramework="imageFramework"
+        :frameworkR="frameworkR"
+        :linkFrameworkR="linkFrameworkR"
+        :imageFrameworkR="imageFrameworkR"
+        :library="library"
+        :linkLibrary="linkLibrary"
+        :imageLibrary="imageLibrary"
+        :UIFrameworkT="UIFrameworkT"
+        :linkUIFrameworkT="linkUIFrameworkT"
+        :imageUIFrameworkT="imageUIFrameworkT"
+        :UIFrameworkS="UIFrameworkS"
+        :linkUIFrameworkS="linkUIFrameworkS"
+        :imageUIFrameworkS="imageUIFrameworkS"
+        :UIFrameworkP="UIFrameworkP"
+        :linkUIFrameworkP="linkUIFrameworkP"
+        :imageUIFrameworkP="imageUIFrameworkP"
+        :UIFrameworkR="UIFrameworkR"
+        :linkUIFrameworkR="linkUIFrameworkR"
+        :imageUIFrameworkR="imageUIFrameworkR"
+        :Servis="Servis"
+        :linkServis="linkServis"
+        :imageServis="imageServis"
+        :titleServer="titleServer"
+        :Server="Server"
+        :linkServer="linkServer"
+        :imageServer="imageServer"
+        :ServerS="ServerS"
+        :linkServerS="linkServerS"
+        :imageServerS="imageServerS"
+      />
+    </div>
+    <div class="flex items-center justify-center">
       <a :href="link" target="_blank">
         <img
           :src="image"
-          class="hover:translate-y-[-5px] cursor-pointer rounded-xl transition-all duration-500 ease-in-out mb-16"
+          class="hover:translate-y-[-5px] cursor-pointer rounded-xl transition-all duration-500 ease-in-out"
           alt=""
         />
       </a>
-    </div>
-    <div class="absolute bottom-0 left-0 right-0">
-      <div class="flex justify-between items-center gap-10 px-3 py-6 text-[14px]">
-        <a :href="link" target="_blank" class="text-start hover:underline truncate ps-3">{{
-          description
-        }}</a>
-        <UseDialog
-          :link="link"
-          :image="image"
-          :description="description"
-          :title="title"
-          :framework="framework"
-          :linkFramework="linkFramework"
-          :imageFramework="imageFramework"
-          :frameworkR="frameworkR"
-          :linkFrameworkR="linkFrameworkR"
-          :imageFrameworkR="imageFrameworkR"
-          :library="library"
-          :linkLibrary="linkLibrary"
-          :imageLibrary="imageLibrary"
-          :UIFrameworkT="UIFrameworkT"
-          :linkUIFrameworkT="linkUIFrameworkT"
-          :imageUIFrameworkT="imageUIFrameworkT"
-          :UIFrameworkS="UIFrameworkS"
-          :linkUIFrameworkS="linkUIFrameworkS"
-          :imageUIFrameworkS="imageUIFrameworkS"
-          :UIFrameworkP="UIFrameworkP"
-          :linkUIFrameworkP="linkUIFrameworkP"
-          :imageUIFrameworkP="imageUIFrameworkP"
-          :UIFrameworkR="UIFrameworkR"
-          :linkUIFrameworkR="linkUIFrameworkR"
-          :imageUIFrameworkR="imageUIFrameworkR"
-          :Servis="Servis"
-          :linkServis="linkServis"
-          :imageServis="imageServis"
-          :titleServer="titleServer"
-          :Server="Server"
-          :linkServer="linkServer"
-          :imageServer="imageServer"
-          :ServerS="ServerS"
-          :linkServerS="linkServerS"
-          :imageServerS="imageServerS"
-        />
-      </div>
     </div>
   </div>
 </template>
