@@ -2,7 +2,7 @@
 export default {
   name: 'UseStats',
   mounted() {
-    document.title = 'Portfolio | About';
+    document.title = 'Portfolio | Skills';
   }
 };
 </script>
