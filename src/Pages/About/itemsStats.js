@@ -2,23 +2,23 @@ export const itemsProgressVue = [
   {
     id: 1,
     name: 'Vue.js',
-    value: 74,
+    value: 84,
     delay: 100,
     headerName: [
       {
         id: 1,
         name: 'Composition API',
         namejs: [
-          { name: 'ref()', value: 45 },
+          { name: 'ref()', value: 75 },
           { name: 'reactive()', value: 23 },
-          { name: 'watch()', value: 14 },
-          { name: 'computed()', value: 18 },
-          { name: 'onMounted()', value: 36 },
+          { name: 'watch()', value: 35 },
+          { name: 'computed()', value: 30 },
+          { name: 'onMounted()', value: 45 },
           { name: 'defineProps()', value: 56 },
           { name: 'defineEmits()', value: 32 },
-          { name: 'provide()', value: 46 },
-          { name: 'inject()', value: 46 },
-          { name: 'props', value: 60 },
+          { name: 'provide()', value: 35 },
+          { name: 'inject()', value: 35 },
+          { name: 'props', value: 70 },
           { name: 'template', value: 78 }
         ]
       },
@@ -26,20 +26,20 @@ export const itemsProgressVue = [
         id: 2,
         name: 'Directives',
         namejs: [
-          { name: 'v-model', value: 45 },
-          { name: 'v-on', value: 43 },
-          { name: 'v-bind', value: 54 },
+          { name: 'v-model', value: 75 },
+          { name: 'v-on', value: 73 },
+          { name: 'v-bind', value: 64 },
           { name: 'v-show', value: 66 },
-          { name: 'v-for', value: 43 },
-          { name: 'v-if, v-else, v-else-if', value: 67 },
-          { name: 'v-slot', value: 32 },
+          { name: 'v-for', value: 80 },
+          { name: 'v-if, v-else, v-else-if', value: 76 },
+          { name: 'v-slot', value: 42 },
           { name: 'v-once', value: 21 },
           { name: 'v-muted', value: 12 },
           { name: 'v-text', value: 56 },
-          { name: 'v-html', value: 45 },
-          { name: 'v-pre', value: 42 },
-          { name: 'v-memo', value: 21 },
-          { name: 'v-cloak', value: 11 }
+          { name: 'v-html', value: 75 },
+          { name: 'v-pre', value: 43 },
+          { name: 'v-memo', value: 31 },
+          { name: 'v-cloak', value: 13 }
         ]
       }
     ]
@@ -54,21 +54,21 @@ export const itemsProgressVue = [
         id: 1,
         name: 'Functions',
         namejs: [
-          { name: 'map()', value: 62 },
-          { name: 'function()', value: 76 },
-          { name: 'Стрелочные функции', value: 45 },
+          { name: 'map()', value: 72 },
+          { name: 'function()', value: 80 },
+          { name: 'Стрелочные функции', value: 80 },
           { name: 'filter()', value: 18 },
-          { name: 'fetch()', value: 40 },
-          { name: 'JSON', value: 45 },
+          { name: 'fetch()', value: 60 },
+          { name: 'JSON', value: 67 },
           { name: 'if else', value: 76 },
           { name: 'switch', value: 12 },
           { name: 'for', value: 45 },
           { name: 'while', value: 32 },
-          { name: 'Object', value: 65 },
+          { name: 'Object', value: 75 },
           { name: 'Array', value: 43 },
-          { name: 'Async/Await', value: 34 },
-          { name: 'try/catch', value: 24 },
-          { name: 'Взаимодействие: alert, prompt, confirm ', value: 54 }
+          { name: 'Async/Await', value: 54 },
+          { name: 'try/catch', value: 54 },
+          { name: 'Взаимодействие: alert, prompt, confirm ', value: 44 }
         ]
       },
       {
@@ -92,28 +92,27 @@ export const itemsProgressVue = [
     headerName: [
       {
         id: 1,
-        name: 'Tag',
+        name: 'Tag - частота использования тегов',
         namejs: [
-          { name: '<template></template>', value: 65 },
+          { name: '<template></template>', value: 100 },
           { name: '<div></div>', value: 100 },
-          { name: '<p></p>', value: 100 },
-          { name: '<h1-h6></h1-h6>', value: 64 },
+          { name: '<p></p>', value: 10 },
+          { name: '<h1-h6></h1-h6>', value: 4 },
           { name: '<a></a>', value: 86 },
           { name: '<button></button>', value: 96 },
           { name: '<header></header>', value: 87 },
           { name: '<footer></footer>', value: 85 },
-          { name: '<main></main>', value: 57 },
-          { name: '<hr/>', value: 97 },
-          { name: '<input/>', value: 87 },
-          { name: '<iframe/>', value: 54 },
-          { name: '<textarea></textarea>', value: 76 },
-          { name: '<progress></progress>', value: 44 },
-          { name: '<murquee></murquee>', value: 44 },
-          { name: '<meta></meta>', value: 56 },
-          { name: '<link></link>', value: 67 },
-          { name: '<ul></ul>', value: 87 },
-          { name: '<li></li>', value: 77 },
-          { name: '<ol></ol>', value: 43 }
+          { name: '<main></main>', value: 5 },
+          { name: '<hr/>', value: 21 },
+          { name: '<input/>', value: 76 },
+          { name: '<iframe/>', value: 5 },
+          { name: '<textarea></textarea>', value: 10 },
+          { name: '<progress></progress>', value: 2 },
+          { name: '<murquee></murquee>', value: 3 },
+          { name: '<meta></meta>', value: 80 },
+          { name: '<ul></ul>', value: 12 },
+          { name: '<li></li>', value: 12 },
+          { name: '<ol></ol>', value: 12 }
         ]
       }
     ]
@@ -121,43 +120,43 @@ export const itemsProgressVue = [
   {
     id: 4,
     name: 'CSS',
-    value: 80,
+    value: 90,
     delay: 250
   },
   {
     id: 5,
     name: 'PrimeVue',
-    value: 67,
+    value: 77,
     delay: 300
   },
   {
     id: 6,
     name: 'Vue-Router',
-    value: 36,
+    value: 56,
     delay: 350
   },
   {
     id: 7,
     name: 'Tailwind',
-    value: 89,
+    value: 95,
     delay: 400
   },
   {
     id: 8,
     name: 'Github',
-    value: 78,
+    value: 86,
     delay: 450
   },
   {
     id: 9,
     name: 'npm',
-    value: 45,
+    value: 64,
     delay: 500
   },
   {
     id: 10,
     name: 'Netlify',
-    value: 45,
+    value: 70,
     delay: 550
   }
 ];
