@@ -1,5 +1,5 @@
 <template>
-  <div class="card flex justify-center">
+  <div class="flex justify-center card">
     <Drawer v-model:visible="visible" position="right">
       <template #header>
         <div class="flex items-center gap-2">
@@ -7,9 +7,9 @@
         </div>
       </template>
       <div class="flex flex-col gap-5 text-[17px]">
-        <RouterLink to="/" @click="visible = false">Work</RouterLink>
-        <RouterLink to="/About" @click="visible = false">About</RouterLink>
-        <RouterLink to="/Profile" @click="visible = false" class="">Profile</RouterLink>
+        <RouterLink to="/" @click="visible = false">Сайты</RouterLink>
+        <RouterLink to="/About" @click="visible = false">Уровни навыков</RouterLink>
+        <RouterLink to="/Profile" @click="visible = false" class="">Профиль</RouterLink>
       </div>
     </Drawer>
     <Button icon="pi pi-bars" @click="visible = true" text class="!text-white" />

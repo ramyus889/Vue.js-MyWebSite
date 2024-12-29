@@ -15,9 +15,9 @@ import UseDrawer from './UseDrawer.vue';
         <UseDrawer />
       </div>
       <div class="hidden gap-5 sm:flex pe-5">
-        <RouterLink :to="`${routeUrl[2].path}`" class="">Profile</RouterLink>
-        <RouterLink :to="`${routeUrl[0].path}`">Work</RouterLink>
-        <RouterLink :to="`${routeUrl[1].path}`" class="">Skills</RouterLink>
+        <RouterLink :to="`${routeUrl[2].path}`" class="">Профиль</RouterLink>
+        <RouterLink :to="`${routeUrl[0].path}`">Сайты</RouterLink>
+        <RouterLink :to="`${routeUrl[1].path}`" class="">Уровни навыков</RouterLink>
       </div>
     </header>
   </div>

@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div class="mt-[150px] px-5">
-    <div class="flex justify-between items-center">
+    <div class="flex flex-col justify-between gap-5 sm:items-center sm:flex-row">
       <div class="flex items-center gap-4">
         <img
           src="/img/Code/frontend.jpg"
@@ -10,14 +10,17 @@
           data-aos-delay="100"
           class="sm:w-[130px] w-[75px] rounded-2xl"
         />
-        <div class="flex flex-col sm:gap-4 gap-2">
+        <div class="flex flex-col gap-2 sm:gap-4">
           <div class="sm:text-[30px] text-[18px]" data-aos="fade-up" data-aos-delay="150">
-            Рамазан Юсупов
+            Рамазан Юсупов 22 года
           </div>
-          <div class="" data-aos="fade-up" data-aos-delay="200">Frontend Разработчик</div>
+          <div class="">
+            <div class="" data-aos="fade-up" data-aos-delay="200">Frontend Разработчик</div>
+            <div class="" data-aos="fade-up" data-aos-delay="200">Опыт работы 1 год 9 месяцев</div>
+          </div>
         </div>
       </div>
-      <div class="">
+      <div class="flex place-content-end">
         <a href="/resume.pdf" download="resume.pdf" title="Download Resume">
           <img
             data-aos="fade-up"
