@@ -14,7 +14,7 @@ export default {
       data-aos-delay="100"
       class="pb-5 font-bold text-center uppercase text-7xl"
     >
-      Work
+      Сайты
     </p>
 
     <div class="">

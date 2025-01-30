@@ -101,7 +101,7 @@ defineProps({
       <a :href="link" target="_blank">
         <img
           :src="image"
-          class="hover:translate-y-[-5px] cursor-pointer rounded-xl transition-all duration-500 ease-in-out"
+          class="transition-all duration-500 ease-in-out cursor-pointer rounded-xl"
           alt=""
         />
       </a>
