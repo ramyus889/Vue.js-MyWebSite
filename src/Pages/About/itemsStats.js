@@ -1,7 +1,7 @@
 export const itemsProgressVue = [
   {
     id: 1,
-    name: 'Vue.js',
+    name: 'Vue.js - Nuxt.js',
     value: 84,
     delay: 100,
     headerName: [

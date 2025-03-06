@@ -93,7 +93,7 @@ export const items1 = [
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
     imageServis: '/netlify.svg',
-    delay: 500
+    delay: 400
   },
   {
     id: 5,
@@ -117,7 +117,7 @@ export const items1 = [
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
     imageServis: '/netlify.svg',
-    delay: 550
+    delay: 100
   },
   {
     id: 6,
@@ -141,7 +141,7 @@ export const items1 = [
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
     imageServis: '/netlify.svg',
-    delay: 600
+    delay: 200
   },
   {
     id: 7,
@@ -165,7 +165,29 @@ export const items1 = [
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
     imageServis: '/netlify.svg',
-    delay: 650
+    delay: 300
+  },
+  {
+    id: 8,
+    image: '/Screenshot_14.png',
+    link: 'https://tiptap747.netlify.app/',
+    gitLink: 'https://github.com/ramyus889/Nuxt.js---TipTap',
+    description: 'tiptap747.netlify.app',
+    title: 'Tiptap747',
+    framework: 'Vue.js',
+    linkFramework: 'https://vuejs.org/',
+    imageFramework: '/vue.svg',
+    library: 'AOS',
+    linkLibrary: 'https://michalsnik.github.io/aos/',
+    imageLibrary: '/AOS.svg',
+    UIFrameworkT: 'Tailwind CSS',
+    linkUIFrameworkT: 'https://tailwindcss.com/',
+    imageUIFrameworkT: '/tailwindcss.svg',
+    UIFrameworkP: 'PrimeVue',
+    Servis: 'Netlify',
+    linkServis: 'https://www.netlify.com/',
+    imageServis: '/netlify.svg',
+    delay: 400
   }
 ];
 export const items2 = [

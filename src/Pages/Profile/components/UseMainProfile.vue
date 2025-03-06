@@ -17,7 +17,7 @@
           <div class="">
             <div class="" data-aos="fade-up" data-aos-delay="200">Frontend Разработчик</div>
             <div class="" data-aos="fade-up" data-aos-delay="200">
-              Опыт обучения 1 год 9 месяцев
+              Опыт обучения 1 год 11 месяцев
             </div>
           </div>
         </div>
