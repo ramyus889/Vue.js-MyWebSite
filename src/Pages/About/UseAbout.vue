@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import UseFooter from '@/components/UseFooter.vue';
 import UseStats from './components/UseStats.vue';
 </script>

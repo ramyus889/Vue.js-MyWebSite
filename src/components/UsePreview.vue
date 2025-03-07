@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import UseDialog from './UseDialog.vue';
 
 defineProps({

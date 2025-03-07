@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Button from 'primevue/button';
 import ButtonGroup from 'primevue/buttongroup';
 import IconField from 'primevue/iconfield';
@@ -14,7 +14,7 @@ const emit = defineEmits(['update:show', 'update:searchInput']);
 function updateSearchInput() {
   emit('update:searchInput', searchInput.value);
 }
-function updateShow(value) {
+function updateShow(value: boolean) {
   show.value = value;
   emit('update:show', value);
 }

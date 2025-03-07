@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { routeUrl } from '@/router/routes';
 import { useRoute } from 'vue-router';
 import UseDrawer from './UseDrawer.vue';

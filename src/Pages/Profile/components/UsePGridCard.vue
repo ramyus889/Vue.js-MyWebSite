@@ -1,15 +1,25 @@
-<script setup>
+<script setup lang="ts">
 import axios from 'axios';
 import { computed, onMounted, ref } from 'vue';
 import UseCardItemFlex from './UseCardItemFlex.vue';
 import UseCardItemGrid from './UseCardItemGrid.vue';
 import UseInputButton from './UseInputButton.vue';
 
-const items = ref([]);
+interface Item {
+  id: number;
+  title: string;
+  delay: number;
+  gitTitle: string;
+  linkTitle1: string;
+  linkTitle2: string;
+  linkGithub: string;
+}
+
+const items = ref<Item[]>([]);
 const searchInput = ref('');
 const show = ref(true);
 
-function updateSearchInput(value) {
+function updateSearchInput(value: string) {
   searchInput.value = value;
 }
 

@@ -1,15 +1,12 @@
-<script>
-export default {
-  name: 'UseWebSite',
-  mounted() {
-    document.title = 'Portfolio | Profile';
-  }
-};
-</script>
-<script setup>
+<script setup lang="ts">
 import UseFooter from '@/components/UseFooter.vue';
 import UseMainProfile from './components/UseMainProfile.vue';
 import UsePGridCard from './components/UsePGridCard.vue';
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  document.title = 'Portfolio | Profile';
+});
 </script>
 <template>
   <div

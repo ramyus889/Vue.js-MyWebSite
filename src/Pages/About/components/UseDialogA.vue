@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Button from 'primevue/button';
 import Dialog from 'primevue/dialog';
 import Panel from 'primevue/panel';

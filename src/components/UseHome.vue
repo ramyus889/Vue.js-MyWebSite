@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import UseFooter from './UseFooter.vue';
 import UseGridCard from './UseGridCard.vue';
 import UseWork from './UseWork.vue';

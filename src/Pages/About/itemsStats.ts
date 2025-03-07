@@ -127,36 +127,48 @@ export const itemsProgressVue = [
     id: 5,
     name: 'PrimeVue',
     value: 77,
-    delay: 300
+    delay: 100
   },
   {
     id: 6,
     name: 'Vue-Router',
     value: 56,
-    delay: 350
+    delay: 150
   },
   {
     id: 7,
-    name: 'Tailwind',
+    name: 'Tailwind v3, v4',
     value: 95,
-    delay: 400
+    delay: 200
   },
   {
     id: 8,
     name: 'Github',
     value: 86,
-    delay: 450
+    delay: 250
   },
   {
     id: 9,
     name: 'npm',
     value: 64,
-    delay: 500
+    delay: 300
   },
   {
     id: 10,
     name: 'Netlify',
     value: 70,
-    delay: 550
+    delay: 350
+  },
+  {
+    id: 11,
+    name: 'Vuetify',
+    value: 40,
+    delay: 400
+  },
+  {
+    id: 12,
+    name: 'Vitest',
+    value: 10,
+    delay: 450
   }
 ];

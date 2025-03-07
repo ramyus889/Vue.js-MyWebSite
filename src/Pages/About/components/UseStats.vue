@@ -1,22 +1,17 @@
-<script>
-export default {
-  name: 'UseStats',
-  mounted() {
-    document.title = 'Portfolio | Skills';
-  }
-};
-</script>
-
-<script setup>
+<script setup lang="ts">
 import Button from 'primevue/button';
 import Panel from 'primevue/panel';
 import ProgressBar from 'primevue/progressbar';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import UseDialogA from './UseDialogA.vue';
 
 import { itemsProgressVue } from '../itemsStats';
 
 const visible = ref(false);
+
+onMounted(() => {
+  document.title = 'Portfolio | About';
+});
 </script>
 <template>
   <div class="flex flex-col gap-10 mx-10 mb-[100px]">

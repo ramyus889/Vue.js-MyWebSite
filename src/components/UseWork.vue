@@ -1,10 +1,9 @@
-<script>
-export default {
-  name: 'UseWork',
-  mounted() {
-    document.title = 'Portfolio | Work';
-  }
-};
+<script setup lang="ts">
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  document.title = 'Portfolio | Work';
+});
 </script>
 
 <template>

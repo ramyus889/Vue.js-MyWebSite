@@ -106,7 +106,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Button from 'primevue/button';
 import Dialog from 'primevue/dialog';
 import { ref } from 'vue';

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import UseHeader from './components/UseHeader.vue';
 </script>
 

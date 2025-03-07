@@ -1,4 +1,4 @@
-<script setup></script>
+<script setup lang="ts"></script>
 <template>
   <div class="mt-[150px] px-5">
     <div class="flex flex-col justify-between gap-5 sm:items-center sm:flex-row">

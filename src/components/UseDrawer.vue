@@ -44,7 +44,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { routeUrl } from '@/router/routes';
 import Avatar from 'primevue/avatar';
 import Button from 'primevue/button';

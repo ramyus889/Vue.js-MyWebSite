@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import UsePreview from './UsePreview.vue';
 
 import { items1 } from '../Items';
