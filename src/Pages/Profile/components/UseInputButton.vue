@@ -40,13 +40,13 @@ function updateShow(value) {
         text
         icon="pi pi-th-large"
         @click="updateShow(true)"
-        :class="show ? '!bg-[#322e2e]' : ''"
+        :class="show ? 'bg-[#322e2e]!' : ''"
       />
       <Button
         text
         icon="pi pi-list"
         @click="updateShow(false)"
-        :class="show ? '' : '!bg-[#322e2e]'"
+        :class="show ? '' : 'bg-[#322e2e]!'"
       />
     </ButtonGroup>
   </div>

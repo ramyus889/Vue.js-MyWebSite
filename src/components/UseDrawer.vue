@@ -12,7 +12,7 @@
         <RouterLink to="/Profile" @click="visible = false" class="">Профиль</RouterLink>
       </div>
     </Drawer>
-    <Button icon="pi pi-bars" @click="visible = true" text class="!text-white" />
+    <Button icon="pi pi-bars" @click="visible = true" text class="text-white" />
   </div>
 </template>
 

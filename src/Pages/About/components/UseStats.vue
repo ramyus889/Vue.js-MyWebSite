@@ -23,7 +23,7 @@ const visible = ref(false);
     <div class="">
       <Button
         :label="visible ? 'Hide' : 'Show'"
-        class="!outline-none"
+        class="outline-hidden!"
         @click="visible = !visible"
       />
     </div>

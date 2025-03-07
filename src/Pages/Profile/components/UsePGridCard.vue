@@ -37,7 +37,7 @@ const filteredItems = computed(() => {
     />
     <div v-if="show" class="flex place-content-center">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 min-[1100px]:grid-cols-3 gap-5 mt-[50px] w-full"
+        class="grid grid-cols-1 md:grid-cols-2 min-[1100px]:grid-cols-3! gap-5 mt-[50px] w-full"
         v-auto-animate
       >
         <UseCardItemGrid

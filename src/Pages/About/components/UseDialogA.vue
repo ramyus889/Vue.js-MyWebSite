@@ -1,6 +1,6 @@
 <template>
   <div class="card flex justify-end">
-    <Button text label="Open" class="!outline-none" @click="visible = true" />
+    <Button text label="Open" class="outline-hidden!" @click="visible = true" />
     <Dialog v-model:visible="visible" modal :header="name" class="mx-5" :style="{ width: '50rem' }">
       <div class="flex flex-col gap-3">
         <div v-for="head in headerName" :key="head.id" class="">
