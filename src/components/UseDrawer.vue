@@ -10,9 +10,7 @@
         <RouterLink
           to="/"
           :class="
-            route.path === `${routeUrl[0].path}`
-              ? 'underline text-green-500 font-bold transition-all'
-              : ''
+            route.path === `${routeUrl[0].path}` ? ' text-green-500 font-bold transition-all' : ''
           "
           @click="visible = false"
           >Сайты</RouterLink
@@ -20,9 +18,7 @@
         <RouterLink
           to="/About"
           :class="
-            route.path === `${routeUrl[1].path}`
-              ? 'underline text-green-500 font-bold transition-all'
-              : ''
+            route.path === `${routeUrl[1].path}` ? ' text-green-500 font-bold transition-all' : ''
           "
           @click="visible = false"
           >Уровни навыков</RouterLink
@@ -30,9 +26,7 @@
         <RouterLink
           to="/Profile"
           :class="
-            route.path === `${routeUrl[2].path}`
-              ? 'underline text-green-500 font-bold transition-all'
-              : ''
+            route.path === `${routeUrl[2].path}` ? ' text-green-500 font-bold transition-all' : ''
           "
           @click="visible = false"
           class=""

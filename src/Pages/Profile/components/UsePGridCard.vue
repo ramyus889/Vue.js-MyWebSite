@@ -46,10 +46,7 @@ const filteredItems = computed(() => {
       @update:searchInput="updateSearchInput"
     />
     <div v-if="show" class="flex place-content-center">
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 min-[1100px]:grid-cols-3! gap-5 mt-[50px] w-full"
-        v-auto-animate
-      >
+      <div class="grid grid-cols-1 md:grid-cols-2 min-[1100px]:grid-cols-3! gap-5 mt-[50px] w-full">
         <UseCardItemGrid
           v-for="item in filteredItems"
           :key="item.id"
@@ -64,7 +61,7 @@ const filteredItems = computed(() => {
       </div>
     </div>
     <div v-else class="">
-      <div class="flex flex-col gap-5 mt-[50px]" v-auto-animate>
+      <div class="flex flex-col gap-5 mt-[50px]">
         <UseCardItemFlex
           v-for="item in filteredItems"
           :key="item.id"

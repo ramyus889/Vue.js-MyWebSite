@@ -47,7 +47,7 @@ defineProps({
   <div
     data-aos="fade-up"
     :data-aos-delay="delay"
-    class="md:max-w-[630px] relative w-full border border-slate-600 p-[15px] flex flex-col gap-5 justify-between"
+    class="min-[1320px]:max-w-[630px] relative w-full border border-slate-600 rounded-xl sm:p-[15px] p-[10px] flex flex-col gap-5 justify-between"
   >
     <div class="">
       <div class="flex justify-between items-center gap-10 text-[14px] px-3">
