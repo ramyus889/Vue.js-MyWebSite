@@ -1,7 +1,7 @@
 <template>
-  <div class="relative">
+  <div class="">
     <footer
-      class="border-t border-slate-600 mt-[150px] flex justify-between py-5 px-5 items-center absolute -bottom-[340px] left-0 right-0"
+      class="border-t border-slate-600 mt-[150px] flex justify-between py-5 px-5 items-center"
     >
       <RouterLink to="/" class="flex gap-3 items-center">
         <img src="/img/Code/frontend.jpg" alt="" class="w-[45px] rounded-full" />

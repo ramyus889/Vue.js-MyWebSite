@@ -7,28 +7,29 @@ import UseDialogA from './UseDialogA.vue';
 
 import { itemsProgressVue } from '../itemsStats';
 
-const visible = ref(false);
+const visible = ref(true);
 
 onMounted(() => {
   document.title = 'Portfolio | About';
 });
 </script>
 <template>
-  <div class="flex flex-col gap-10 mx-10 mb-[100px]">
-    <div class="">
-      <Button
-        :label="visible ? 'Hide' : 'Show'"
-        class="outline-hidden!"
-        @click="visible = !visible"
-      />
-    </div>
-    <div class="">
-      <div data-aos="fade-up" data-aos-delay="100" class="text-3xl font-bold">
-        Уровень навыков (Vue.js)
+  <div class="flex place-content-center mt-10 sm:mx-10 mx-2">
+    <div class="max-w-[1330px] w-full">
+      <div class="flex sm:flex-row flex-col max-sm:gap-5 sm:justify-between">
+        <div data-aos="fade-up" data-aos-delay="100" class="text-3xl max-sm:text-center font-bold">
+          Уровни навыков (Vue.js)
+        </div>
+
+        <Button
+          :label="visible ? 'Hide' : 'Show'"
+          class="outline-hidden!"
+          @click="visible = !visible"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        />
       </div>
-      <div
-        class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-6 max-w-[1200px]"
-      >
+      <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-6">
         <div v-for="item in itemsProgressVue" :key="item.id" class="flex flex-col gap-3">
           <div data-aos="fade-up" :data-aos-delay="item.delay" class="">
             <Panel :header="item.name" toggleable :collapsed="!visible">

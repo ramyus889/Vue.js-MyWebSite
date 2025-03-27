@@ -151,24 +151,30 @@ export const itemsProgressVue = [
     id: 9,
     name: 'npm',
     value: 64,
-    delay: 300
+    delay: 100
   },
   {
     id: 10,
     name: 'Netlify',
     value: 70,
-    delay: 350
+    delay: 150
   },
   {
     id: 11,
     name: 'Vuetify',
     value: 40,
-    delay: 400
+    delay: 200
   },
   {
     id: 12,
     name: 'Vitest',
     value: 10,
-    delay: 450
+    delay: 250
+  },
+  {
+    id: 12,
+    name: 'Pinia',
+    value: 54,
+    delay: 100
   }
 ];
