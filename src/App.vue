@@ -5,6 +5,6 @@ import UseHeader from './components/UseHeader.vue';
 <template>
   <div class="">
     <UseHeader />
-    <RouterView></RouterView>
+    <RouterView />
   </div>
 </template>
