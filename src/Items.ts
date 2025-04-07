@@ -93,7 +93,7 @@ export const items1 = [
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
     imageServis: '/netlify.svg',
-    delay: 400
+    delay: 100
   },
   {
     id: 5,
@@ -117,7 +117,7 @@ export const items1 = [
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
     imageServis: '/netlify.svg',
-    delay: 100
+    delay: 200
   },
   {
     id: 6,
@@ -141,7 +141,7 @@ export const items1 = [
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
     imageServis: '/netlify.svg',
-    delay: 200
+    delay: 300
   },
   {
     id: 7,
@@ -165,7 +165,7 @@ export const items1 = [
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
     imageServis: '/netlify.svg',
-    delay: 300
+    delay: 100
   },
   {
     id: 8,
@@ -187,7 +187,29 @@ export const items1 = [
     Servis: 'Netlify',
     linkServis: 'https://www.netlify.com/',
     imageServis: '/netlify.svg',
-    delay: 400
+    delay: 200
+  },
+  {
+    id: 9,
+    image: '/Screenshot_15.png',
+    link: 'https://frontendcursor747.netlify.app/',
+    gitLink: 'https://github.com/ramyus889/Nuxt.js---Cursor',
+    description: 'frontendcursor747.netlify.app',
+    title: 'FrontendCursor747',
+    framework: 'Vue.js',
+    linkFramework: 'https://vuejs.org/',
+    imageFramework: '/vue.svg',
+    library: 'AOS',
+    linkLibrary: 'https://michalsnik.github.io/aos/',
+    imageLibrary: '/AOS.svg',
+    UIFrameworkT: 'Tailwind CSS',
+    linkUIFrameworkT: 'https://tailwindcss.com/',
+    imageUIFrameworkT: '/tailwindcss.svg',
+    UIFrameworkP: 'PrimeVue',
+    Servis: 'Netlify',
+    linkServis: 'https://www.netlify.com/',
+    imageServis: '/netlify.svg',
+    delay: 300
   }
 ];
 // export const items2 = [
